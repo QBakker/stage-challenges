@@ -1,0 +1,25 @@
+//Navbar
+#brand-logo {
+    margin: 15px 10px;
+    height: 30px;   
+}
+
+.link-scale {
+    transition: 0.5s;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.navbar {
+    min-height: 50px;
+    font-family: 'Brandon',serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+body {
+    background: linear-gradient(70deg, #ff4a37, #ff376e, #ff4a37, #ff376e);
+}
