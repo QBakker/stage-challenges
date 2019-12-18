@@ -16,7 +16,7 @@
                     <h5 class="card-subtitle text-center mb-2">{{ $challenge->subtitle }}</h5>
                     <hr class="my-4">
                     <p class="card-text overflow-auto overflow-small">{{ $challenge->content }}</p>
-                    <a href="{{ route('challenge.show', $challenge->id) }}" class="btn btn-primary btn-block position-absolute fixed-bottom mb-3">Open Challenge</a>
+                    <a href="{{ route('challenge.show', $challenge->id) }}" class="btn btn-primary btn-block position-absolute fixed-bottom mb-3 challenge-btn">Open Challenge</a>
                 </div>
             </div>
         </div>
