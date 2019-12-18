@@ -12,3 +12,11 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+
+Route::resources([
+    'challenge' => 'ChallengeController',
+    ]);
+    
+Route::view('/contact', 'contact');
+
+Route::get('/challenge/{challenge}/solution', 'ChallengeController@solveChallenge')->name('solveChallenge');

@@ -5,21 +5,83 @@
 }
 
 .link-scale {
-    transition: 0.5s;
-    
-    &:hover {
-        transform: scale(1.1);
-    }
+        transition: 0.5s;
+        
+        &:hover {
+            transform: scale(1.1);
+        }
 }
 
 .navbar {
-    min-height: 50px;
-    font-family: 'Brandon',serif;
+    min-height: 100px;
     font-weight: 300;
-    font-size: 15px;
-    text-transform: uppercase;
 }
 
+// body
 body {
     background: linear-gradient(70deg, #ff4a37, #ff376e, #ff4a37, #ff376e);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+    color: $white;
+}
+
+// Card
+.card-img-top {
+    width: 95%;
+    padding: 1.25rem;
+    margin: 0 auto;
+}
+
+.card, .jumbotron {
+    color: $dark;
+    max-height: 80vh;
+
+}
+
+.challenge-cards {
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.overflow-small {
+    height: 100px;
+}
+
+.overflow-large {
+    height: 250px;
+}
+
+.font-lyfter {
+    font-family: 'Brandon',serif;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.ion-icons {
+    color: $red;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+#site-footer {
+    #footer-main .container {
+        padding: 4rem 0;
+    }
+
+    background-color: $light;
+    color: $gray;
+
+    ul, li { 
+        padding: 0;
+        list-style: none;
+    }
+
+    a {    
+        color: $gray;
+    }
 }
